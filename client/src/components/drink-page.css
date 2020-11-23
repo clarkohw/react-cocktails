@@ -1,0 +1,16 @@
+.drink{
+    text-align: center;
+    background-color: whitesmoke;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.big-drink-pic {
+    height: 50%;
+    width: 50%;
+}
+
+.instructions {
+    margin-left: 100px;
+    margin-right: 100px;    
+}
