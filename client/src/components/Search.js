@@ -6,7 +6,7 @@ const axios = require("axios");
 function Search() {
     const [drinks, setDrinks] = useState([])
     const [search, setSearch] = useState("");
-    const [query, setQuery] = useState("rum");
+    const [query, setQuery] = useState("gin");
 
 
     useEffect(() => {

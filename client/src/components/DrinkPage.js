@@ -24,13 +24,15 @@ class DrinkPage extends Component {
 
     render() {
         return (
-            <div className="drink">
-                <h1>{this.state.drinks.strDrink}</h1>
-                <p className="instructions">{this.state.drinks.strInstructions}</p>
-                <a href="/">
-                    <img src={this.state.drinks.strDrinkThumb} alt="" className="big-drink-pic" />
-                </a>
-            </div >
+            <div className="page">
+                <div className="drink">
+                    <h1 className="title">{this.state.drinks.strDrink}</h1>
+                    <p className="instructions">{this.state.drinks.strInstructions}</p>
+                    <a href="/" className="return-link">
+                        <img src={this.state.drinks.strDrinkThumb} alt="" className="big-drink-pic" />
+                    </a>
+                </div >
+            </div>
         )
     }
 
