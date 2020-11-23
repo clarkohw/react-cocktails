@@ -12,10 +12,13 @@ class DrinkPage extends Component {
     }
 
     componentDidMount() {
-        axios.get("/drink/" + this.props.match.params.id).then(drinkList => {
-            this.setState({ drinks: drinkList.data.drinks[0] })
-            console.log(this.state.drinks)
-        });
+        if (this.props.match.params.id !== "no results found") {
+            axios.get("/drink/" + this.props.match.params.id).then(drinkList => {
+                this.setState({ drinks: drinkList.data.drinks[0] })
+
+            });
+        }
+
 
     }
 
@@ -30,6 +33,7 @@ class DrinkPage extends Component {
             </div >
         )
     }
+
 }
 
 export default DrinkPage;
