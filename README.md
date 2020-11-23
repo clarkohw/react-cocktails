@@ -4,9 +4,10 @@ Search cocktails by ingredient. Click drink names to see a simple drink page.
 
 API: https://www.thecocktaildb.com/api.php 
 
-## Installation
+## Usage
 
 ```bash
+(use npm or yarn)
 # Install dependencies for server
 npm install
 
